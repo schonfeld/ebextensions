@@ -18,6 +18,7 @@ echo $OUT
 #make sure node binaries can be found globally
 rm -f /usr/bin/node
 ln -s /opt/elasticbeanstalk/node-install/node-v$NODE_VER-linux-$ARCH/bin/node /usr/bin/node
+ln -s /opt/elasticbeanstalk/node-install/node-v$NODE_VER-linux-$ARCH/bin/node /opt/elasticbeanstalk/node-install/current
 
 rm -f /usr/bin/npm
 ln -s /opt/elasticbeanstalk/node-install/node-v$NODE_VER-linux-$ARCH/bin/npm /usr/bin/npm
