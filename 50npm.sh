@@ -9,7 +9,7 @@ function error_exit
 if [ ! -d "/var/node_modules" ]; then
   mkdir /var/node_modules ;
 fi
-if [ -d /tmp/deployment/application ]; then
+if [ -d /tmp/deployment/application ] && [ ! -d /tmp/deployment/application/node_modules ]; then
   ln -s /var/node_modules /tmp/deployment/application/
 fi
 
